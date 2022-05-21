@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Install git, download files and delete git
-# apt install git-all
-# git clone https://github.com/proggarapsody/uni-linux-task.git
-# apt-get remove git-all
-
 apt-get update 
 apt-get install 1 dialog 
 
@@ -38,6 +33,8 @@ apt install apache2
 cd ..
 rm -rf /var/www/html/*
 mv -f ./* /var/www/html
+cd .. 
+rm uni-linux-task-master
 
 systemctl start apache2 
 
