@@ -11,7 +11,8 @@ body {
   justify-content: center;
 }
 
-img {
+img,
+video {
   width: 250px;
   height: auto;
   margin-bottom: 20px;
