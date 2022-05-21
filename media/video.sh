@@ -2,11 +2,13 @@
 
 # Dialog Do you wont do download videos?
 
+apt install ffmpeg
+
 name=1
 mkdir video-out
 
 cd video-in
-multNames=("https://multiki.arjlover.net/info/sport.sport.sport.avi" "https://multiki.arjlover.net/info/gustavus.and.a.long.life.avi" "https://multiki.arjlover.net/info/zagreb.okay.avi" "https://multiki.arjlover.net/info/zagreb.way.to.your.neighbour.avi" "https://multiki.arjlover.net/info/zagreb.the.wall.avi" "https://multiki.arjlover.net/info/zagreb.the.ceremony.avi" "https://multiki.arjlover.net/info/cat.s.story.avi" "https://multiki.arjlover.net/info/jak.sli.kremilek.a.vochomurka.na.parezy.avi" "https://multiki.arjlover.net/info/tolko.dlay.sobak.avi" "https://multiki.arjlover.net/info/tuda.i.obratno.avi")
+multNames=("https://multiki.arjlover.net/multiki/sport.sport.sport.avi" "https://multiki.arjlover.net/multiki/gustavus.and.a.long.life.avi" "https://multiki.arjlover.net/multiki/zagreb.okay.avi" "https://multiki.arjlover.net/multiki/zagreb.way.to.your.neighbour.avi" "https://multiki.arjlover.net/multiki/zagreb.the.wall.avi" "https://multiki.arjlover.net/multiki/zagreb.the.ceremony.avi" "https://multiki.arjlover.net/multiki/cat.s.story.avi" "https://multiki.arjlover.net/multiki/jak.sli.kremilek.a.vochomurka.na.parezy.avi" "https://multiki.arjlover.net/multiki/tolko.dlay.sobak.avi" "https://multiki.arjlover.net/multiki/tuda.i.obratno.avi")
 
 for video in ${multNames[@]};
 do
