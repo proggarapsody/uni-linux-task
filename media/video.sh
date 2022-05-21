@@ -6,6 +6,7 @@ apt install ffmpeg
 
 name=1
 mkdir video-out
+mkdir video-in
 ls .
 cd video-in/
 multNames=("https://multiki.arjlover.net/multiki/gustavus.and.a.long.life.avi" )
