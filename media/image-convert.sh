@@ -8,7 +8,7 @@ name=1
 
 for image in *.*;
 do
-convert "$image" -quality 30 ../photo-out/$name.jpg
+convert "$image" -quality 30 ./../photo-out/$name.jpg
 echo "$image"
 let name=name+1
 done
