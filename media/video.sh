@@ -9,7 +9,7 @@ mkdir video-out
 mkdir video-in
 ls .
 cd video-in/
-multNames=("https://multiki.arjlover.net/multiki/gustavus.and.a.long.life.avi" )
+multNames=("https://www.pexels.com/ru-ru/video/7709470/download/?search_query=&tracking_id=cjyle78nmdk https://www.pexels.com/ru-ru/video/5380467/download/?search_query=&tracking_id=cjyle78nmdk https://www.pexels.com/ru-ru/video/10622156/download/?search_query=&tracking_id=cjyle78nmdk https://www.pexels.com/ru-ru/video/10167684/download/?search_query=&tracking_id=cjyle78nmdk https://www.pexels.com/ru-ru/video/9722139/download/?search_query=&tracking_id=cjyle78nmdk" )
 
 for video in ${multNames[@]};
 do
