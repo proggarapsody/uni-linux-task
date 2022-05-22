@@ -9,24 +9,43 @@ sudo dialog --title "Wget install" \
 --yesno "Hello! firstly you must download wget package" 7 60
 response=$?
 case $response in
-   0) echo; clear; "Continue";;
-   1) echo; clear;"Goodbye!"; exit;;
-   255) echo; clear; "Goodbye!"; exit;;
+   0) clear; echo "Continue";;
+   1) clear; echo "Goodbye!"; exit;;
+   255) clear; echo "Goodbye!"; exit;;
 esac
 
+# Download main site files
 sudo apt install wget
 sudo apt install unzip
 sudo wget -O site.zip https://github.com/proggarapsody/uni-linux-task/archive/main.zip
 sudo unzip -o site.zip -x "*.git/*"
 sudo rm site.zip
 cd uni-linux-task-main
+sudo rm script.sh
 
 # Working with images and videos
 cd media
+
 # Dialog - run image-convert script?
-sudo bash image-convert.sh # convert image and delete photo-in folder
+sudo dialog --title "Image convert" \
+--backtitle "Web App installer" \
+--yesno "NOTE: if you do not run convert the site will be without images!!!" 7 60
+response=$?
+case $response in
+   # convert image and delete photo-in folder
+   0) sudo bash image-convert.sh;;
+esac
+ 
 # Dialog - run video script?
-sudo bash video.sh # download video, convert their and delete video-in folder
+sudo dialog --title "Video download" \
+--backtitle "Web App installer" \
+--yesno "NOTE: if you do not run video dwonload the site will be without videos!!!" 7 60
+response=$?
+case $response in
+   # Run video.sh script
+   0) sudo bash video.sh;;
+esac
+
 sudo rm image-convert.sh
 sudo rm video.sh
 
