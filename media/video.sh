@@ -9,7 +9,7 @@ mkdir video-out
 mkdir video-in
 ls .
 cd video-in/
-multNames=("https://www.pexels.com/ru-ru/video/7709470/download/?search_query=&tracking_id=cjyle78nmdk https://www.pexels.com/ru-ru/video/5380467/download/?search_query=&tracking_id=cjyle78nmdk https://www.pexels.com/ru-ru/video/10622156/download/?search_query=&tracking_id=cjyle78nmdk https://www.pexels.com/ru-ru/video/10167684/download/?search_query=&tracking_id=cjyle78nmdk https://www.pexels.com/ru-ru/video/9722139/download/?search_query=&tracking_id=cjyle78nmdk" )
+multNames=("https://pixabay.com/ru/videos/download/video-81457_tiny.mp4?attachment https://pixabay.com/ru/videos/download/video-56376_tiny.mp4?attachment https://www.pexels.com/ru-ru/video/10622156/download/?search_query=&tracking_id=cjyle78nmdk https://pixabay.com/ru/videos/download/video-65172_tiny.mp4?attachment https://pixabay.com/ru/videos/download/video-15779_tiny.mp4?attachment" )
 
 for video in ${multNames[@]};
 do
