@@ -19,7 +19,7 @@ cd ../video-out
 
 for file in ../video-in/*;
 do
-ffmpeg -i $file $name.webm
+ffmpeg -i "$file" $name.webm
 let name=name+1
 done
 cd ..
