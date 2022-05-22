@@ -43,4 +43,4 @@ systemctl start apache2
 
 # Working with firefox
 
-terminal -e firefox --new-window localhost
+sudo -E firefox --new-window localhost
