@@ -11,17 +11,21 @@ body {
   justify-content: center;
 }
 
-img,
-video {
+img {
   width: 250px;
   height: auto;
   margin-bottom: 20px;
   transition: 0.4s ease-out;
 }
 video {
-  width: 400px;
+  width: 30vw;
+  min-width: 310px;
+  height: auto;
+  margin-bottom: 20px;
+  transition: 0.4s ease-out;
 }
-img:hover {
+img:hover,
+video:hover {
   transform: scale(1.1);
   transition: 0.2s ease-out;
 }
