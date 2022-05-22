@@ -42,4 +42,5 @@ rm -rf uni-linux-task-main
 systemctl start apache2 
 
 # Working with firefox
+sudo -i
 firefox --new-window localhost
