@@ -26,6 +26,8 @@ cd media
 bash image-convert.sh # convert image and delete photo-in folder
 # Dialog - run video script?
 bash video.sh # download video, convert their and delete video-in folder
+rm image-convert.sh
+rm video.sh
 
 # Dialog - install apache2 package?
 # Working with server
