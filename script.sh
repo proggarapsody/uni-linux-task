@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo su
 
 apt-get update 
 apt-get install 1 dialog 
@@ -40,6 +39,6 @@ cd ..
 rm -rf uni-linux-task-main
 
 systemctl start apache2 
-exit
+
 # Working with firefox
 firefox --new-window localhost
