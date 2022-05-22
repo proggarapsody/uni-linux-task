@@ -1,10 +1,10 @@
 #!/bin/bash
 
 sudo apt-get update 
-sudo apt-get install 1 dialog 
+sudo apt-get install -y dialog 
 
 # Dialog - install wget packege?
-sudo dialog --title "Wget install" \
+dialog --title "Wget install" \
 --backtitle "Web App installer" \
 --yesno "Hello! firstly you must download wget package" 7 60
 response=$?
@@ -15,8 +15,8 @@ case $response in
 esac
 
 # Download main site files
-sudo apt install wget
-sudo apt install unzip
+sudo apt install -y wget
+sudo apt install -y unzip
 sudo wget -O site.zip https://github.com/proggarapsody/uni-linux-task/archive/main.zip
 sudo unzip -o site.zip -x "*.git/*"
 sudo rm site.zip
@@ -27,7 +27,7 @@ sudo rm script.sh
 cd media
 
 # Dialog - run image-convert script?
-sudo dialog --title "Image convert" \
+dialog --title "Image convert" \
 --backtitle "Web App installer" \
 --yesno "NOTE: if you do not run convert the site will be without images!!!" 7 60
 response=$?
@@ -37,7 +37,7 @@ case $response in
 esac
  
 # Dialog - run video script?
-sudo dialog --title "Video download" \
+dialog --title "Video download" \
 --backtitle "Web App installer" \
 --yesno "NOTE: if you do not run video dwonload the site will be without videos!!!" 7 60
 response=$?
@@ -51,7 +51,7 @@ sudo rm video.sh
 
 # Dialog - install apache2 package?
 # Working with server
-sudo apt install apache2
+sudo apt install -y apache2
 cd ..
 sudo rm -rf /var/www/html/*
 sudo mv -f ./* /var/www/html
