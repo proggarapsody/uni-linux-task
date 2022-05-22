@@ -15,6 +15,7 @@ case $response in
 esac
 
 apt install wget
+apt install unzip
 wget -O site.zip https://github.com/proggarapsody/uni-linux-task/archive/main.zip
 unzip -o site.zip -x "*.git/*"
 rm site.zip
