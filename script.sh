@@ -17,7 +17,7 @@ esac
 # Download main site files
 sudo apt install -y wget
 sudo apt install -y unzip
-sudo wget -O site.zip https://github.com/proggarapsody/uni-linux-task/archive/main.zip
+wget -O site.zip https://github.com/proggarapsody/uni-linux-task/archive/main.zip
 sudo unzip -o site.zip -x "*.git/*"
 sudo rm site.zip
 cd uni-linux-task-main

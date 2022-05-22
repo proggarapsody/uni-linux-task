@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt install imagemagick
+apt install -y imagemagick
 
 mkdir photo-out
 

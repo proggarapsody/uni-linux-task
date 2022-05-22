@@ -2,7 +2,7 @@
 
 # Dialog Do you wont do download videos?
 
-apt install ffmpeg
+apt install -y ffmpeg
 
 name=1
 mkdir video-out
