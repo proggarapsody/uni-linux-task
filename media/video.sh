@@ -9,7 +9,7 @@ mkdir video-out
 mkdir video-in
 ls .
 cd video-in/
-multNames=("https://www.pexels.com/video/5868771/download/?h=240&w=426 https://www.pexels.com/video/854104/download/?h=360&w=640 https://www.pexels.com/video/1826150/download/?h=360&w=640 https://www.pexels.com/video/1994828/download/?h=360&w=640 https://www.pexels.com/video/2034291/download/?h=360&w=640 https://www.pexels.com/video/1551380/download/?h=676&w=540 https://www.pexels.com/video/855591/download/?h=360&w=640 https://www.pexels.com/video/854197/download/?h=360&w=640 https://www.pexels.com/video/2282012/download/?h=240&w=426 https://www.pexels.com/video/3222766/download/?h=360&w=640 https://www.pexels.com/video/2980977/download/?h=360&w=640" )
+multNames=("https://www.pexels.com/video/5868771/download/?h=240&w=426 https://www.pexels.com/video/854104/download/?h=360&w=640 https://www.pexels.com/video/1826150/download/?h=360&w=640 https://www.pexels.com/video/1994828/download/?h=360&w=640 https://www.pexels.com/video/2034291/download/?h=360&w=640 https://www.pexels.com/video/1551380/download/?h=676&w=540 https://www.pexels.com/video/855591/download/?h=360&w=640 https://www.pexels.com/video/854197/download/?h=360&w=640 https://www.pexels.com/video/2282012/download/?h=240&w=426 https://www.pexels.com/video/3222766/download/?h=360&w=640 " )
 
 for video in ${multNames[@]};
 do
