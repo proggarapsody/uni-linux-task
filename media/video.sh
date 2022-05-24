@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Dialog Do you wont do download videos?
-
 apt install -y ffmpeg
 
 name=1
