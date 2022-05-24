@@ -4,14 +4,14 @@ sudo apt-get update
 sudo apt-get install -y dialog 
 
 # Dialog - install wget packege?
-dialog --title "Wget install" \
---backtitle "Web App installer" \
---yesno "Hello! firstly you must download wget package" 7 60
+dialog --title "Установка WGET" \
+--backtitle "Установкщик сайта" \
+--yesno "Здравствуйте! Для установки сайта требуется установить пакеты wget и unzip" 7 60
 response=$?
 case $response in
-   0) clear; echo "Continue";;
-   1) clear; echo "Goodbye!"; exit;;
-   255) clear; echo "Goodbye!"; exit;;
+   0) clear; echo "Продолжение...";;
+   1) clear; echo "Процесс не выполнен. Требуемые пакеты не установлены."; exit;;
+   255) clear; echo "Процесс не выполнен. Требуемые пакеты не установлены."; exit;;
 esac
 
 # Download main site files
@@ -51,7 +51,15 @@ sudo rm script.sh
 # sudo rm video.sh
 
 # Dialog - install apache2 package?
-
+dialog --title "Установка APACHE" \
+--backtitle "Установкщик сайта" \
+--yesno "Для запуска сервера требуется установка пакета apache" 7 60
+response=$?
+case $response in
+   0) clear; echo "Продолжение...";;
+   1) clear; echo "Процесс не выполнен. Требуемые пакеты не установлены."; exit;;
+   255) clear; echo "Процесс не выполнен. Требуемые пакеты не установлены."; exit;;
+esac
 # Working with server
 sudo apt install -y apache2
 cd ..
