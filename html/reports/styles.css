@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -10,6 +11,14 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.header {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 img {
@@ -32,9 +41,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 h2 {
   transition: all 0.2s linear;
 }
+
 h2:hover {
   display: inline;
   text-decoration: underline;
