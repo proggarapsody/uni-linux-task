@@ -5,6 +5,7 @@
 }
 body {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   flex-wrap: wrap;
   align-items: center;
@@ -12,21 +13,14 @@ body {
 }
 
 img {
-  width: 250px;
-  height: auto;
   margin-bottom: 20px;
   transition: 0.4s ease-out;
-}
-video {
-  width: 30vw;
-  min-width: 310px;
+  max-width: 100%;
   height: auto;
-  margin-bottom: 20px;
-  transition: 0.4s ease-out;
 }
-img:hover,
-video:hover {
-  transform: scale(1.1);
+
+img:hover {
+  transform: scale(1.06);
   transition: 0.2s ease-out;
 }
 
@@ -36,6 +30,7 @@ a {
 }
 
 a:hover {
+  text-decoration: underline;
 }
 h2 {
   transition: all 0.2s linear;
@@ -45,27 +40,25 @@ h2:hover {
   text-decoration: underline;
   transition: all 0.2s linear;
 }
-.link {
-  width: 100%;
-  display: block;
-  margin: 40px auto;
-  text-align: center;
-}
-
-ul {
-  display: flex;
-  gap: 10px;
-}
-
-p {
-  font-size: 22px;
-  font-weight: bold;
-}
-a:hover {
-  text-decoration: underline;
-}
 
 .WordSection1 {
   width: 60vw;
   margin: 50px auto;
+  min-width: 315px;
+}
+
+@media (max-width: 1200px) {
+  .WordSection1 {
+    width: 80vw;
+    margin: 50px auto;
+    min-width: 315px;
+  }
+}
+
+@media (max-width: 800px) {
+  .WordSection1 {
+    width: 90vw;
+    margin: 50px auto;
+    min-width: 315px;
+  }
 }

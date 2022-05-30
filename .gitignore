@@ -1,4 +1,9 @@
-media/photo-in
-media/video-in
+media/photo-in/
+media/video-in/
 image-convert.sh
 video.sh
+package.json
+package-lock.json
+index.js
+node_modules/
+script.ps1
