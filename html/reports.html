@@ -16,10 +16,12 @@
   </a>
 
   <script>
-    const body = document.querySelector('body')
+    const body = document.querySelector('body');
+    body.innerHTML += `<a href="./reports/page-ИСТ-921_КлименкоАА_Лр${1}.htm" ><p>Лабораторная ${1}</p></a>`;
     for (let i = 5; i < 10; i++) {
-      body.innerHTML += `<a href="./reports/page-ИСТ-921_КлименкоАА_Лр${i}.html" ><p>Лабораторная ${i}</p></a>`
+      body.innerHTML += `<a href="./reports/page-ИСТ-921_КлименкоАА_Лр${i}.html" ><p>Лабораторная ${i}</p></a>`;
     }
+
   </script>
 </body>
 
