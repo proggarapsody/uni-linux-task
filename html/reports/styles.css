@@ -58,6 +58,8 @@ h2:hover {
   min-width: 315px;
 }
 
+
+
 @media (max-width: 1200px) {
   .WordSection1 {
     width: 80vw;

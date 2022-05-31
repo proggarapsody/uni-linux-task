@@ -17,7 +17,7 @@
 
   <script>
     const body = document.querySelector('body');
-    body.innerHTML += `<a href="./reports/page-ИСТ-921_КлименкоАА_Лр${1}.htm" ><p>Лабораторная ${1}</p></a>`;
+    body.innerHTML += `<div class="column"><a href="./reports/page-ИСТ-921_КлименкоАА_Лр${1}.htm" ><p>Лабораторная ${1}</p></a><a href="../media/reports/docx/ИСТ-921_КлименкоАА_Лр1.xlsx"><p>Скачать Лабораторную ${1}.xlsx</p></a></div>`;
     for (let i = 5; i < 10; i++) {
       body.innerHTML += `<a href="./reports/page-ИСТ-921_КлименкоАА_Лр${i}.html" ><p>Лабораторная ${i}</p></a>`;
     }
