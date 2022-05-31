@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Aleksey Klimenko</title>
+</head>
+
+<body>
+
+  <a class="link" href="../index.html">
+    <h2>Главная страница</h2>
+  </a>
+
+  <script>
+    const body = document.querySelector('body');
+    body.innerHTML += `<div class="column"><a href="./reports/page-ИСТ-921_КлименкоАА_Лр${1}.htm" ><p>Лабораторная ${1}</p></a><a href="../media/reports/docx/ИСТ-921_КлименкоАА_Лр1.xlsx"><p>Скачать Лабораторную ${1}.xlsx</p></a></div>`;
+    for (let i = 5; i < 10; i++) {
+      body.innerHTML += `<a href="./reports/page-ИСТ-921_КлименкоАА_Лр${i}.html" ><p>Лабораторная ${i}</p></a>`;
+    }
+
+  </script>
+</body>
+
+</html>
