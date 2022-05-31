@@ -40,6 +40,7 @@ esac
 sudo dialog --title "Video download" \
 --backtitle "Web App installer" \
 --yesno "NOTE: if you do not run video dwonload the site will be without videos!!!" 7 60
+
 response=$?
 case $response in
    # Run video.sh script
@@ -49,7 +50,7 @@ esac
 sudo rm image-convert.sh
 sudo rm video.sh
 
-# Dialog - install apache2 package?
+# ffDialog - install apache2 package?
 # Working with server
 sudo apt install apache2
 cd ..
