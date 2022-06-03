@@ -3,7 +3,7 @@
 sudo apt-get update 
 sudo apt-get install -y dialog 
 
-# Dialog - install wget packege?
+# Dialog - install unzip packege?
 dialog --title "Установка unzip" \
 --backtitle "Установкщик сайта" \
 --yesno "Здравствуйте! Для установки сайта требуется установить пакет unzip" 7 60
@@ -14,15 +14,13 @@ case $response in
    255) clear; echo "Процесс не выполнен. Требуемые пакеты не установлены."; exit;;
 esac
 
-# Download main site files
-
 sudo apt install -y unzip
 
-sudo unzip -o site.zip -x "*.git/*"
-sudo rm site.zip
+sudo unzip -o klimenko.zip -x "*.git/*"
 cd uni-linux-task-main
-# sudo rm script.sh
 
+sudo rm ./*.sh
+sudo rm ./media/*.sh
 
 
 # Dialog - install apache2 package?
@@ -38,14 +36,13 @@ esac
 
 # Working with server
 sudo apt install -y apache2
-
 sudo rm -rf /var/www/html/*
 sudo mv -f ./* /var/www/html
 cd .. 
-sudo rm -rf uni-linux-task-main
+sudo rm -rf ./uni-linux-task-main
 
 sudo systemctl start apache2 
-
+echo "Сайт успешно запущен!"
 # Working with firefox
 
 firefox --new-window localhost
